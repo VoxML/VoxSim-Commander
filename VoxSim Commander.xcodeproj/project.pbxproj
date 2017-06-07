@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		310D02231CA436060077D2C1 /* VoxSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoxSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		310D02231CA436060077D2C1 /* VoxSim Cmdr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VoxSim Cmdr.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		310D02271CA436060077D2C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		310D02291CA436060077D2C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		310D022A1CA436060077D2C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		310D02241CA436060077D2C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				310D02231CA436060077D2C1 /* VoxSim.app */,
+				310D02231CA436060077D2C1 /* VoxSim Cmdr.app */,
 				310D023C1CA436060077D2C1 /* VoxSim CommanderTests.xctest */,
 				310D02471CA436060077D2C1 /* VoxSim CommanderUITests.xctest */,
 			);
@@ -166,7 +166,7 @@
 			);
 			name = "VoxSim Commander";
 			productName = "VoxSim Commander";
-			productReference = 310D02231CA436060077D2C1 /* VoxSim.app */;
+			productReference = 310D02231CA436060077D2C1 /* VoxSim Cmdr.app */;
 			productType = "com.apple.product-type.application";
 		};
 		310D023B1CA436060077D2C1 /* VoxSim CommanderTests */ = {
@@ -211,7 +211,7 @@
 		310D021B1CA436050077D2C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Nikhil Krishnaswamy";
 				TargetAttributes = {
 					310D02221CA436050077D2C1 = {
@@ -353,8 +353,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -397,8 +399,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -431,7 +435,7 @@
 				INFOPLIST_FILE = "VoxSim Commander/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NikhilKrishnaswamy.VoxSim-Commander";
-				PRODUCT_NAME = VoxSim;
+				PRODUCT_NAME = "VoxSim Cmdr";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -445,7 +449,7 @@
 				INFOPLIST_FILE = "VoxSim Commander/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NikhilKrishnaswamy.VoxSim-Commander";
-				PRODUCT_NAME = VoxSim;
+				PRODUCT_NAME = "VoxSim Cmdr";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;

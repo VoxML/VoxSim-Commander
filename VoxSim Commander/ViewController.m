@@ -115,7 +115,7 @@
 }
 
 - (IBAction) sendMessage {
-    NSString *response  = [NSString stringWithFormat:@"%@", _dataToSendText.text];
+    NSString *response  = [NSString stringWithFormat:@"%@\0", _dataToSendText.text];
     NSData *data = [[NSData alloc] initWithData:[response dataUsingEncoding:NSASCIIStringEncoding]];
     [outputStream write:[data bytes] maxLength:[data length]];
 }
@@ -125,7 +125,7 @@
     _dataToSendText.text = button.currentTitle;
     
     //NSString *response  = [NSString stringWithFormat:@"%@", _dataToSendText.text];
-    NSData *data = [[NSData alloc] initWithData:[button.currentTitle dataUsingEncoding:NSASCIIStringEncoding]];
+    NSData *data = [[NSData alloc] initWithData:[[NSString stringWithFormat:@"%@\0", button.currentTitle] dataUsingEncoding:NSASCIIStringEncoding]];
     [outputStream write:[data bytes] maxLength:[data length]];
 }
 
